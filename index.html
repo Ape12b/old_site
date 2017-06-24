@@ -131,16 +131,16 @@ Proficiency gained: MS Suite especially MS Excel and Outlook, Supply chain manag
       <p class="w3-opacity">GET IN TOUCH</p>
       <form method="POST" name="contactform" action="contact-form-handler.php">
         <div class="w3-section">
-          <label for='Name'>Name</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+          <label for='name'>Name</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="name">
         </div>
         <div class="w3-section">
-          <label for = 'Email'>Email</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+          <label for = 'email'>Email</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="email">
         </div>
         <div class="w3-section">
-          <label for = 'Message'>Message</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+          <label for = 'message'>Message</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="message">
         </div>
         <button type="submit" class="w3-button w3-teal w3-right">Send</button>
       </form>
@@ -149,9 +149,9 @@ Proficiency gained: MS Suite especially MS Excel and Outlook, Supply chain manag
 		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
 		// for details
 		var frmvalidator  = new Validator("contactform");
-		frmvalidator.addValidation("Name","req","Please provide your name"); 
-		frmvalidator.addValidation("Email","req","Please provide your email"); 
-		frmvalidator.addValidation("Email","Email","Please enter a valid email address"); 
+		frmvalidator.addValidation("name","req","Please provide your name"); 
+		frmvalidator.addValidation("email","req","Please provide your email"); 
+		frmvalidator.addValidation("email","email","Please enter a valid email address"); 
 		</script>
     </div>
   </div>
