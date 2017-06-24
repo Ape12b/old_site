@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+</head>
 <title>Ape12b.github.io</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -128,19 +131,28 @@ Proficiency gained: MS Suite especially MS Excel and Outlook, Supply chain manag
       <p class="w3-opacity">GET IN TOUCH</p>
       <form method="POST" name="contactform" action="contact-form-handler.php">
         <div class="w3-section">
-          <label>Name</label>
+          <label for='Name'>Name</label>
           <input class="w3-input" style="width:100%;" type="text" required name="Name">
         </div>
         <div class="w3-section">
-          <label>Email</label>
+          <label for = 'Email'>Email</label>
           <input class="w3-input" style="width:100%;" type="text" required name="Email">
         </div>
         <div class="w3-section">
-          <label>Message</label>
+          <label for = 'Message'>Message</label>
           <input class="w3-input" style="width:100%;" type="text" required name="Message">
         </div>
         <button type="submit" class="w3-button w3-teal w3-right">Send</button>
       </form>
+	  <script language="JavaScript">
+		// Code for validating the form
+		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+		// for details
+		var frmvalidator  = new Validator("contactform");
+		frmvalidator.addValidation("Name","req","Please provide your name"); 
+		frmvalidator.addValidation("Email","req","Please provide your email"); 
+		frmvalidator.addValidation("Email","Email","Please enter a valid email address"); 
+		</script>
     </div>
   </div>
   <!-- End Grid -->
